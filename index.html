@@ -8,10 +8,11 @@
 </head>
 <body>
     <header>
-        <div class="side">
+        <div class="title">
             <img src="odin-lined.png" alt="Odin Logo" id="logo">
             <h1>ODIN</h1>   
         </div>
+        <p id="credit">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
     </header>
     
     <main>
@@ -20,23 +21,43 @@
             <p>You <em>know</em> you want to.</p>
         </div>
 
-        <div class="formSection">
+        <div class="form-section">
             <h2>Let's do this!</h2>
             <form action="">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName">
-                <label for="lastNmae">Last Name</label>
-                <input type="text" id="lastName">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-                <label for="phone">Phone Number</label>
-                <input type="number" id="phone">
-                <label for="password">Password</label>
-                <input type="password" id="password">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword">
+                <div class="form-info">
+                    <div class="form-elements">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName">
+                    </div>
+                    <div class="form-elements">
+                        <label for="lastNmae">Last Name</label>
+                        <input type="text" id="lastName">
+                    </div>
+                </div>
+                <div class="form-info">
+                    <div class="form-elements">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-elements">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone">
+                    </div>
+                </div>
+                <div class="form-info">
+                    <div class="form-elements">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="password" required>
+                    </div>
+                    <div class="form-elements">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" class="password" required>
+                    </div>
+                </div>
             </form>
-            <button type="submit">Create Account</button>
+        </div>
+        <div class="createButton">
+            <button type="submit" id="create">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </main>

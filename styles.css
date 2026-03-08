@@ -18,38 +18,151 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     display: flex;
     height: 100vh;
+    width: 75vw;
+    margin: 0 auto;
 }
 
 header {
     background: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-    display: flex;
-    align-items: center;
+    background-position: center;
 }
 
-.side {
+.title {
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-    width: 40vw;
+    width: 25vw;
+    position: relative;
+    top: 200px;
 }
 
-.side #logo {
+.title #logo {
     width: 70px;
 }
 
-.side h1 {
+.title h1 {
     color: white;
     font-size: 4rem;
+    font-family: 'NorseBold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#credit {
+    font-size: 0.7rem;
+    color: white;
+    font-weight: 100;
+    position: relative;
+    top: 84vh;
+    text-align: center;
+}
 
-h1 {
-    font-family: 'NorseBold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#credit a {
+    color: white;
+}
+
+/* Main Form side styling */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    background-color: rgb(249, 250, 251);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 5rem 0 1rem;
+}
+
+.form-section {
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 0 10px 10px lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    gap: 1rem;
+    /* border: 2px solid red; */
+}
+
+.form-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    /* border: 2px solid red; */
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+label {
+    font-size: 0.75rem;
+    color: rgb(104, 104, 104)
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    width: 150px;
+    height: 20px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 5px 5px 20px -5px;
+}
+
+input.password:invalid {
+    border: 1px solid orange;
+}
+
+/* Button Section */
+
+.createButton {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    
+}
+
+#create {
+    background-color: #596D48;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5rem 1.3rem;
+    font-size: 0.7rem;
+    border: none;
+    width: 150px;
+}
+
+.createButton p {
+    font-size: 0.6em;
+}
+
+.createButton p a {
+    color: #596D48;
+    text-decoration: none;
 }
